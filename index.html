@@ -14,15 +14,30 @@ body {
     margin: 0.6%;
     background-color: #f1f1f1;
     font-family: sans-serif;
+ 
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
 }
 
 .all_cols{
     float: left;
-    padding: 15px;
     background-color: white;
     margin: 0.6%;
-   /* box-shadow: 1px 4px 14px 1px #d2d2d2;*/
    box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+}
+
+.primary_color{
+  color: #228ae6;
+}
+
+.text_mark{
+  background-color:  #228ae6;
+  color:  #ffffff;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .main_col {
@@ -31,6 +46,7 @@ body {
 
 .side_col {
     width: 65.3%;
+    padding: 0px 0px 10px 25px
 }
 
 @media (max-width:600px) {
@@ -48,15 +64,36 @@ body {
 
 
   <div class="all_cols main_col" style="height: 620px">
-    <h3><i class="fa fa-user-o"></i> Nikhil J. Umraskar</h3>
-  </div>
-  <div class="all_cols side_col" style="height: 302.5px">
-    <h3><i class="fa fa-laptop"></i> Work Experience</h3>
     
-  </div>
- <div class="all_cols side_col" style="height: 302.5px">
-  <h3><i class="fa fa-bookmark-o"></i> Education</h3>
   
+  </div>
+  <div class="all_cols side_col" >
+    <h2><i class="fa fa-laptop primary_color"></i> Work Experience</h2>
+    <div class="side_container" >
+      <h3>Software Baker | Anant Infomedia Pvt. Ltd, Panaji Goa</h3>
+      <h4> Sept 2015 - <mark class="text_mark">Current</mark></h4>
+      <p>
+        Developes web and hybrid mobile apps, webservices and dashboards.
+      </p>
+    </div>
+  </div>
+ <div class="all_cols side_col" >
+  <h2><i class="fa fa-bookmark-o primary_color"></i> Education</h2>
+    <div class="side_container" >
+      <h3>BE (CS)</h3>
+      <h4>2015 | Goa College of Engineering, Ponda Goa</h4>
+    </div>
+    <div class="side_container" >
+      <h3>HSSC</h3>
+      <h4>2011 | P. Walawalkar Higher Secondary, Khorlim Goa</h4>
+      <p>
+        
+      </p>
+    </div>
+    <div class="side_container" >
+      <h3>SSC</h3>
+      <h4>2009 |  Holy Cross High School, Bastora Goa</h4>
+    </div>
   </div>
 
 </body>
